@@ -1,7 +1,7 @@
 typedef int elem;
 void HeapAdjust(elem R[], int s, int m)
 {
-	/* 已知R [s...m] 中记录的关键字除 R[s] 之外均满足堆的定义，本函数调整 R[s] 的关键字，使 R[s...m] 成为一个大根堆 */
+	/* 已知 R[s...m] 中记录的关键字除 R[s] 之外均满足堆的定义，本函数调整 R[s] 的关键字，使 R[s...m] 成为一个大根堆 */
 	int rc = R[s];
 	for (int j = 2 * s; j <= m; j *= 2) // 沿 key 较大的孩子结点向下筛选
 	{

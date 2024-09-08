@@ -28,7 +28,7 @@ void HeapSort(elem R[], int n) // 对 R[1] 到 R[n] 进行堆排序
 	int i;
 	for (i = n / 2; i >= 1; i--)
 		HeapAdjust(R, i, n); // 建初始堆
-	for (i = n; i > 1; i--) // 进行n - 1趟排序
+	for (i = n; i > 1; i--) // 进行 n - 1 趟排序
 	{
 		Swap(R[1], R[i]); // 根与最后一个元素交换
 		HeapAdjust(R, 1, i - 1); // 对 R[1] 到 R[i - 1] 重新建堆
